@@ -1,0 +1,254 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<body>
+
+<!--copy from here-->
+
+<p>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>// <![CDATA[
+function initialize() {
+		var myLatLng = {lat: 45.617217, lng: -122.641305};
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: myLatLng,
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+		
+		var marker = new google.maps.Marker({
+    	position: myLatLng,
+    	map: map,
+    	title: 'HTG, Inc.'
+  		});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+// ]]></script>
+</p>
+
+
+<!--Address, Map and Social Media-->
+<div class="container" style="padding-left: 0px; margin-top: 50px; margin-bottom: 50;">
+	<div class="row" style="padding-bottom: 10px;"><!--     HTG Corporate Address       -->
+            <div class="col-md-4" style="padding: 0px;">
+                <div class="align-bottom" style="height: 150px;">
+                    <div class="center-column">
+                        <p style="padding: 0em; margin: 0em;"><span style="font-family: 'arial black', 'avant garde'; font-size: small;">HTG, Inc.</span></p>
+                        <p style="padding: 0em; margin: 0em;"><span style="font-family: 'arial black', 'avant garde'; font-size: small;">2801 SE Columbia Way,</span></p>
+                        <p style="padding: 0em; margin: 0em;"><span style="font-family: 'arial black', 'avant garde'; font-size: small;">Bldg. 31, Suite 110</span></p>
+                        <p style="padding: 0em; margin: 0em;"><span style="font-family: 'arial black', 'avant garde'; font-size: small;">Vancouver, WA 98661 USA</span></p>
+                        <p style="padding: 0em; margin: 0em;"><span style="font-family: 'arial black', 'avant garde'; font-size: small;">Main: 360.567.0869</span></p>
+                        <p style="padding: 0em; margin: 0em;"><span style="font-family: 'arial black', 'avant garde'; font-size: small;"><a href="mailto:HTGProcurement@htginc.com">HTGProcurement@htginc.com</a></span></p>
+                    </div>
+                </div>
+            </div>
+            
+        <!--     HTG Corporate Map       -->
+        <div class="col-md-4" style="padding: 0px;">
+            <div class="align-bottom" style="height: 150px;">
+                <div class="center-column">
+                    <div id="map">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--     Social Media Links       -->
+        <div class="col-md-4" style="padding: 0px;">
+            <div class="align-bottom" style="height: 150px;">
+                <div class="row center-column" style="width: 300px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12 center-column" style="padding-left: 10px; padding-right: 5px;">
+                            <a href="http://www.facebook.com/htginc" target="_blank">
+                                <img src="http://i783.photobucket.com/albums/yy113/htginc/facebookIcon.gif" alt=" photo facebookIcon.gif" border="0" />
+                            </a> 
+                            <a href="https://plus.google.com/105717998334701117235/posts" target="_blank">
+                                <img src="http://i783.photobucket.com/albums/yy113/htginc/googleIcon.gif" alt=" photo googleIcon.gif" border="0" />
+                            </a> 
+                            <a href="https://twitter.com/HTG_INC" target="_blank">
+                                <img src="http://i783.photobucket.com/albums/yy113/htginc/twitterIcon.gif" alt=" photo twitterIcon.gif" border="0" />
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+<!--copy to here-->
+
+
+</body>
+</html>
+
+<style>
+
+.htg-text{
+	font-family: 'Droid Sans', sans-serif;
+}
+
+h2.hVARName{
+     font-family: 'Droid Sans', sans-serif;
+     color: #104879;
+     font-weight: bold;
+}
+
+p.pVARContact{
+     font-family: 'Droid Sans', sans-serif;
+     color: #104879;
+     font-weight: bold;
+}
+
+.navbar-default{
+     background-color: #337ab7;
+     border-color: #204d74;
+}
+
+.input-group-btn > .btn{
+	color: #777;
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.badge{
+	background-color: #ffffff;
+	color:#777;
+}
+
+.box-green{
+	border:1px solid #398439; 
+	background-color:#449d44; 
+	border-radius: 5px;
+}
+
+.box-blue{
+	border:1px solid #337ab7; 
+	background-color:#204d74; 
+	border-radius: 5px;
+        color: #ffffff;
+}
+
+.box-grey{
+	border:1px solid #e7e7e7; 
+	background-color:#f8f8f8; 
+	border-radius: 5px;
+}
+
+.vertical-align{
+	display:flex;
+	align-items:center;	
+}
+
+.align-bottom{
+	display:flex;
+	align-items:flex-end;
+}
+
+.center-column{
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+a.button-orange, .vc_btn3.vc_btn3-color-warning.vc_btn3-style-flat, a.btnblue {
+    background-color: #f18b21 !important;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 70px;
+    text-decoration: none;
+}
+
+a.button-orange:hover, .vc_btn3.vc_btn3-color-warning.vc_btn3-style-flat:hover, a.btnblue:hover {
+    background: linear-gradient(to bottom, #f18b21 0%, #faab59 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: -moz-use-text-color -moz-use-text-color #f18b21;
+    border: none;
+    color: #fff;
+}
+
+#rotate90{
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.carousel{
+    background: #ffffff;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+    width:100%;
+}
+
+.carousel-buffer{
+	margin-bottom:40px;
+        margin-left:0px;
+        margin-right:0px;
+	margin-top:0px;
+        padding:0px;
+        padding-right:30px;
+}
+
+.container-adjust{
+	margin-bottom:40px;
+        margin-left:0px;
+        margin-right:0px;
+	margin-top:0px;
+        padding:0px;
+        padding-right:30px;
+}
+
+.btn-info{
+     background-color: #337ab7;
+     border-color: #204d74;
+}
+
+#imga
+{
+position:relative;
+z-index: 10;
+top: 0px;
+left: 0px;
+}
+
+#imgb
+{
+position:absolute;
+z-index: 20;
+left: 18%;
+top: 15%;
+float:left;
+}
+
+#map {
+    width: 300px;
+    height: 150px;
+    background-color: #CCC;
+}
+
+</style>
